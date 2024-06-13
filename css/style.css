@@ -51,7 +51,6 @@ button:hover{
     grid-template-rows: auto 1fr;
     gap: 10px;
     align-items: center;
-    
 }
 
 .text p {
@@ -81,11 +80,13 @@ button:hover{
 .notas {
     display: flex;
 }
+
 .nota {
     flex: 1;
     padding: 20px;
     border: 1px solid #ddd;
 }
+
 .nota h2 {
     font-family:'Rocketship';
     font-weight: bold;
@@ -134,25 +135,64 @@ button:hover{
     color: black;
 }
 
-
-@media (max-width: 320px) {
-
-}
-
-@media (max-width: 375px) {
-
-}
-
-@media (max-width: 425px) {
-
-}
+@media (max-width: 1024px) {
+    header{
+        background-color: brown;
+        justify-content: space-around;
+        }
+    }
 
 @media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .galeria{
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas:
+        "item1"
+        "item2";
+        }
+    }
+    
+@media (max-width: 425px) {
+    .informacionDiaria{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .notas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }   
+    }
 
-}
+@media (max-width: 375px) {
+    .informacionDiaria{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .notas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 320px) {
+    .informacionDiaria{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .notas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
 }
 
 @font-face{

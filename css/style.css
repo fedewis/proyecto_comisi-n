@@ -72,7 +72,7 @@ button:hover{
     align-items: center;
 }
 
-.cotizacion {
+.cotizacion iframe{
     grid-row: 1 / span 2;
     grid-column: 2;
 }
@@ -112,9 +112,17 @@ button:hover{
 
 .secciones img{
     width: 100%;
-    height: auto;
+    height:auto;
     display: block; 
     margin-bottom: 30px;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
 }
 
 .paginas {
@@ -180,14 +188,64 @@ button:hover{
         justify-content: center;
         align-items: center;
         }
-    }
+}
 
 @media (max-width: 320px) {
-    .informacionDiaria{
+    /*.informacionDiaria{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        }*/
+
+    .informacionDiaria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         }
+    
+    .noticias{
+        display: inline-block;
+        justify-content:center;
+        align-items: center;
+        padding: 10px;
+
+    .noticias1 img{
+        max-width: 80%;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .noticias2 img{
+        max-width: 80%;
+        width: auto;
+        margin-left: 0;
+    }
+}
+        /*.ciudad {
+    
+            justify-content: center;
+            align-items: center;
+            }
+        }
+        
+        .ciudad img{
+         
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+        
+        
+        .cotizacion{
+    
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+        */
+
+
     .notas{
         flex-direction: column;
         justify-content: center;
